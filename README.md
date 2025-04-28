@@ -18,6 +18,32 @@ With a 55% win rate and 2:1 reward-to-risk ratio, the Kelly formula suggests:
 = 0.325
 ```
 
+## Usage
+
+```go
+rate, err := kellycriteron.Calculate(0.55, 2.0)
+if err != nil {
+  return err
+}
+
+// rate will be 0.325
+```
+
+## CLI
+
+A cli tool has been provided.
+
+Install it from source with ...
+
+`$ make install`
+
+Usage example
+
+```bash
+$ kelly-critereon -winrate 0.55 -reward 2.0
+0.325
+```
+
 ## References
 
 - [Kelly criterion](https://en.wikipedia.org/wiki/Kelly_criterion)
