@@ -1,12 +1,11 @@
 # Kelly Critereon
 
-The "Kelly Criterion" a is formula to determines the optimal risk size to maximize long-term growth.
+The "Kelly Criterion" a is formula to determine the optimal risk size to maximize long-term growth.
 
-
-Example.
+Given
 
 - winRate : percentage of winning trades e.g. 0.55 represents 55%
-- lossRate : 1.0 - win_rate
+- lossRate : equals 1.0 - winRate
 - reward : risk multiple returned on a winning trade. e.g. 2.0 (return is 2.0 times the risk)
 
 With a 55% win rate and 2:1 reward-to-risk ratio, the Kelly formula suggests:
